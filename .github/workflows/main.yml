@@ -19,11 +19,10 @@ jobs:
       - name: Install dependencies
         run: |
           cd testing
-          pip install requests
-          pip install pytest
+          pip install requests pandas
 
       - name: Run pytest
         run: |
           cd testing
           pytest
-          python testing.py
+          python test_mock.py
