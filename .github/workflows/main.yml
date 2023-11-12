@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd testing
-          pip install requests pandas dotenv
+          pip install requests pandas
 
       - name: Run unittest
         run: |
