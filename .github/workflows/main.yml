@@ -21,8 +21,7 @@ jobs:
           cd testing
           pip install requests pandas
 
-      - name: Run pytest
+      - name: Run unittest
         run: |
           cd testing
-          pytest
           python test_mock.py
