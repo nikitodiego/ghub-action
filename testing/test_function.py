@@ -3,15 +3,16 @@ import pandas as pd
 import os
 import requests
 import time
+from dotenv import load_dotenv
 import logging
 
-#load_dotenv()
+load_dotenv()
 
 def api_call(**context):
     time.sleep(30)
     date=context['ds']
     if (0<= datetime.datetime.strptime(date,'%Y-%m-%d').date().weekday()<5):
-        response = requests.get(f"https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/{date}?adjusted=true&apiKey=")
+        response = requests.get(f"https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/{date}?adjusted=true&apiKey={os.getenv('API_KEY')}")
         if response.raise_for_status()!=None:
             raise Exception("api call problem")
         data = response.json()
