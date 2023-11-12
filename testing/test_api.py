@@ -1,6 +1,7 @@
 import requests
 import pytest
 
+#definiendo funcion
 def test_get_api():
     response = requests.get(
         'https://jsonplaceholder.typicode.com/users/1'

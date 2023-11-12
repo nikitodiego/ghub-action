@@ -19,8 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd testing
-          pip install requests
-          pip install pytest
+          pip install requests pytest
 
       - name: Run pytest
         run: |
