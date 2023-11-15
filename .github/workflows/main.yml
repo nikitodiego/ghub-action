@@ -21,4 +21,4 @@ jobs:
           pip install requests pandas python-dotenv
       - name: Run unittest
         run: 
-          python ./testing/test_mock.py
+          python -m unittest tests.test_mock
