@@ -19,7 +19,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests pandas python-dotenv 
-          python -m pip install dags.data
       - name: Run unittest
         run: 
-          python testing/test_mock.py
+          python -m testing.test_mock
