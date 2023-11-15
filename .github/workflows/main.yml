@@ -17,11 +17,9 @@ jobs:
           python-version: 3.8
 
       - name: Install dependencies
-        run: |
-          cd testing
+        run:
           pip install requests pandas python-dotenv
 
       - name: Run unittest
-        run: |
-          cd testing
-          python test_mock.py
+        run: 
+          python /testing/test_mock.py
