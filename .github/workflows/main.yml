@@ -22,4 +22,4 @@ jobs:
 
       - name: Run unittest
         run: 
-          python /testing/test_mock.py
+          python testing/test_mock.py
