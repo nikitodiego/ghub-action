@@ -18,7 +18,7 @@ jobs:
 
       - name: Install dependencies
         run:
-          pip install requests pandas python-dotenv dags
+          pip install requests pandas python-dotenv dags.data
 
       - name: Run unittest
         run: 
